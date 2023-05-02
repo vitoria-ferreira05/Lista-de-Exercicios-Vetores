@@ -7,20 +7,20 @@ public class Exercicio3 {
         //números pares da lista
 
         Scanner sc = new Scanner(System.in);
-        int numero;
         int numeroVetor[] = new int[10];
 
         System.out.println("NÚMEROS PARES");
         System.out.println("------------------------------------");
 
-       for (int i = 0; i < 10; i++){
-           System.out.println("Digite o número: ");
-           numero = sc.nextInt();
-       }
+        for (int i = 0; i < numeroVetor.length; i++) {
+            System.out.println("Digite o número: ");
+            numeroVetor[i] = sc.nextInt();
+        }
         System.out.println("------------------------------------");
-        for (int i = 1; i < numeroVetor.length; i++){
-            if (i % 2 == 0){
-                System.out.println("O número pares são: " + i);
+
+        for (int i = 0; i < numeroVetor.length; i++) {
+            if (numeroVetor[i] % 2 == 0) {
+                System.out.println("O número pares são: " + numeroVetor[i]);
             }
         }
     }

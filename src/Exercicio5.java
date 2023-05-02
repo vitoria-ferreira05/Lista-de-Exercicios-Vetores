@@ -13,20 +13,28 @@ public class Exercicio5 {
         //Musica3
 
         String musicas[] = new String[3];
-        String bandaMusical, musicasDaBanda;
+        String bandaMusical;
 
         Scanner sc = new Scanner(System.in);
 
         System.out.println("---BANDAS MUSICAIS---");
 
+        System.out.println("Digite o nome da banda musical: ");
+        bandaMusical = sc.next();
+
+
         for (int i = 0; i < 3; i++){
-            bandaMusical = sc.next();
 
+            System.out.println("Digite 3 músicas que você gosta da banda: " );
+            musicas[i] = sc.next();
         }
-        for (int i = 0; i < musicas.length; i++){
 
-            musicasDaBanda = sc.next();
+        System.out.println("As musicas da banda " + bandaMusical + " sao: ");
+        for (int i = 0; i< 3; i++){
+            System.out.println((i) + ". " + musicas[i]);
+        }
+
         }
 
     }
-}
+

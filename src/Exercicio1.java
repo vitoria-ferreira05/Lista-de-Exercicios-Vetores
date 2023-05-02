@@ -6,7 +6,7 @@ public class Exercicio1 {
         //vetor, calcule e apresente a soma destes valores
 
         Scanner sc = new Scanner(System.in);
-        int soma, valoresDig;
+        int soma = 0, valoresDig;
         int[] valores = new int[5];
 
         System.out.println("ENTRE COM OS VALORES PARA A SOMA ");
@@ -22,7 +22,8 @@ public class Exercicio1 {
         System.out.println("Soma dos números: ");
 
         for (int i = 0; i < valores.length; i++) {
-            soma = i + valores[i];
+            //soma = i + valores[i];
+            soma += valores[i]; //soma = soma + valores[i];
             System.out.println("A soma dos números é: " + i + "+" + valores[i] + "=" + soma);
         }
     }
